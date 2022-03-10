@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成就</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <style type="text/css">
+	*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+	display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+	width:auto;
+    background-image:url(img/b1.jpg);
+}
+.slider{
+	margin-top:60px;
+  max-width: 1100px;
+  display: flex;
+}
+.slider .card{
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+.slider .card .img{
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content{
+  padding: 10px 20px;
+}
+.card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(3, 53, 134, 0.5);
+  line-height: 20px;
+}
+.card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.card .content .btn button{
+  background: rgba(3, 53, 134, 0);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.card .content .btn button:hover{
+  transform: scale(0.9);
+}
+</style>
+</head>
+<body>
+<nav>
+		<a href="index.html">Home</a>
+		<a href="song.html">SONG</a>
+		<a href="video.html">VIDEO</a>
+		<a href="intel.html">INFORMATION</a>
+		<a href="achv.html">ACHIEVEMENT</a>
+		<div class="animation start-home"></div>
+	</nav>
+    
+
+  <div class="slider owl-carousel">
+    <div class="card">
+        <div class="img">
+      <img src="img/dynamite.jpg" width="1000" height="1000"></div>
+        <div class="content">
+            <div class="title">Billboard Hot 100</div>
+            <div class="sub-title">First in Asia</div>
+            <p>BTS's single dynamite, released in the summer of 2020, became the first Asian single to win the top 100 titles in the 20th century,
+And get 32 programs 1 bit. With this song, BTS successfully won the Grammy nomination.
+        </p>
+            <div class="btn"><button><a href="read more.html">Read More</a></button></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="img/butter.jpg" width="1000" height="1000"alt="">
+        </div>
+        <div class="content">
+            <div class="title">100 million records</div>
+            <div class="sub-title">21 hours</div>
+            <p>As the second English single on sale by BTS, "butter" has become the fastest single that has exceeded 100 million views on MV,
+This song is also BTS's fourth Hot 100 empty crown, the first day streaming highest single.
+            </p>
+            <div class="btn"><button><a href="read more.html">Read More</a></button></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="img/7.jpg" width="1000" height="1000" alt="">
+        </div>
+        <div class="content">
+            <div class="title">Album sales</div>
+            <div class="sub-title">No.1</div>
+            <p>"Map of the soul 7" will become the number one album in the world in 2020, and the number one of all major albums,
+The album's total sales exceeded 4 million. BTS's total sales exceeded 20 million.
+            </p>
+            <div class="btn"><button><a href="read more.html">Read More</a></button></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="img/奖杯.jpg" width="1000" height="1000" alt="">
+        </div>
+        <div class="content">
+            <div class="title">Trophy</div>
+            <div class="sub-title">Honor</div>
+            <p>BTS has won many awards. In just 200 years, it won more than 70 awards. Bbma, AMA, VMA, billboards
+The awards ceremony such as Mama and so on are awarded, even the grand prize and the Grand Slam.
+            </p>
+            <div class="btn"><button><a href="read more.html">Read More</a></button></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="img">
+            <img src="img/yy.jpg" width="1000" height="1000" alt="">
+        </div>
+        <div class="content">
+            <div class="title">Vocal Concert</div>
+            <div class="sub-title">Rose Bowl,Wembley</div>
+            <p>BTS in the global explosion, they got the rose bowl, Wembley concert qualification, the first in Asia.Their concert was packed.
+The revenue from BTS even brought 0.3% of GDP to South Korea.
+            </p>
+            <div class="btn"><button><a href="read more.html">Read More</a></button></div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+      });
+</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成员信息</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+		ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #16384c;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.container{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card{
+    margin-top: 100px;
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: .3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 420px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: .3s;
+}
+</style>
+</head>
+<body>
+	 <nav>
+		<a href="index.html">Home</a>
+		<a href="song.html">SONG</a>
+		<a href="video.html">VIDEO</a>
+		<a href="intel.html">INFORMATION</a>
+		<a href="achv.html">ACHIEVEMENT</a>
+		<div class="animation start-home"></div>
+	</nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/jp1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>金南俊(RM)</h2>
+                <p>Kim Nam Jun (September 12, 1994 -), born in Shandong district, Gaoyang City, 
+                Gyeonggi do, is a Korean male singer,
+                 music producer and a member of the bulletproof Youth League.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/jp2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>金硕珍(JIN)</h2>
+                <p>
+                    Jin shuozhen (December 4, 1992 -), born in Guochuan, Gyeonggi do, 
+                    South Korea, is a member of the South Korean men's singing group BTS.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/jp3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>闵玧其(SUGA)</h2>
+                <p>
+                    Min juiqi (March 9, 1993 -), born in Daegu, South Korea, 
+                    is a music producer, Korean male singer, rapper, a member of men's singing group BTS.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/jp4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>郑号锡(J-HOPE)</h2>
+                <p>Jeong ho Seok (February 18, 1994 -), Korean pop male singer, 
+                main dancer and member of seven man singing group BTS.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/jp5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>朴智旻(JIMIN)</h2>
+                <p>Park Ji min (October 13, 1995 -), born in Wanan City, Pusan, 
+                South Korea, is a male pop singer and a member of BTS.
+                 He is the lead dancer and singer in the team.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/jp6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>金泰亨(V)</h2>
+                <p>Kim Tae Heng (December 30, 1995 -), born in Daegu, South Korea, 
+                is a Korean male singer, deputy lead singer, member of men's group BTS,
+                 and the world's first handsome man.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img/jp7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>田柾国(JUNGKOOK)</h2>
+                <p>Jeon Jung kook, (September 1, 1997 -), born in Pusan, 
+                South Korea, is a Korean male singer and a member of BTS, a Korean men's group. 
+                He is the all-round player of the team and plays "ACE".
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
